@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>College Major Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form id="survey-form" action="submit.html">
+            <div class="boxed">
+            <!--Title Section-->
+                <h1 id="title">College Major Survey Form</h1>
+                <p id="description">Thank you for filling out the form!</p>
+            <!--Name Section-->
+                <div>
+                    <label id="name-label">Name: <input id="name" type="text" placeholder="Enter your name" required /></label>
+                </div>
+            <!--Email section-->
+                <div>
+                    <label id="email-label">Email: <input id="email" type="text" placeholder="Enter your email" required /></label>
+                </div>
+            <!--Age Section -->
+                <div>
+                    <label id="age-label">Age: <input id="age" type="number" min="0" max="120" placeholder="Age" required /></label>
+                </div>
+            <!--Major Section Dropdown -->
+                <div>
+                    <label>What is your selected/intended major?
+                        <select id="dropdown1" required>
+                            <option disabled selected value="">Select a major</option>
+                            <option value="1">Arts</option>
+                            <option value="2">Business</option>
+                            <option value="3">Engineering and Technology</option>
+                            <option value="4">Enviornment</option>
+                            <option value="5">Literature, Language, and Social Science</option>
+                            <option value="6">Medicine</option>
+                            <option value="7">Science and Math</option>
+                            <option value="8">Other</option>
+                        </select>
+                    </label>
+                </div>
+            <!--Radio Buttons -->
+                <div>
+                    <label>Did you switch majors?
+                    <label><input id="radio1" type="radio" value="yes" name="radio-button" class="inline" />Yes</label>
+                    <label><input id="radio2" type="radio" value="no" name="radio-button" class="inline" />No</label>
+                    </label>
+                </div>
+            <!--Original Major Section Dropdown-->
+                <div id="drop">
+                    <label>What was your original major?
+                        <select id="dropdown2">
+                            <option disabled selected value="">Select a major</option>
+                            <option value="1">Arts</option>
+                            <option value="2">Business</option>
+                            <option value="3">Engineering and Technology</option>
+                            <option value="4">Enviornment</option>
+                            <option value="5">Literature, Language, and Social Science</option>
+                            <option value="6">Medicine</option>
+                            <option value="7">Science and Math</option>
+                            <option value="8">Other</option>
+                        </select>
+                    </label>
+                </div> 
+            <!-- Javascript Radio Button Code-->
+                <script src="main.js"></script>
+            <!--Reason Section -->
+                <div>
+                    <label>Why did you choose your major?
+                    <label><input type="checkbox" value="abilities" class="inline"/> Abilities</label>
+                    <label><input type="checkbox" value="prospects" class="inline"/> Career Prospects</label>
+                    <label><input type="checkbox" value="passion" class="inline"/> Genuine Passion</label>
+                    <label><input type="checkbox" value="cash" class="inline"/> Pay/Incentives</label>
+                    <label><input type="checkbox" value="influence" class="inline"/> Parental Influence</label>
+                    </label>
+                </div>
+            <!--Additional Comments Section -->
+                <div>
+                    <label>Any Additional Comments? <textarea rows="5" cols="32" placeholder="Enter your comment here..."></textarea></label>
+                </div>
+            <!-- Submit Button-->
+                <div>
+                    <input type="submit" value="Submit Form"/>
+                </div>
+
+                
+            </div>
+        </form>
+    </body>
+</html>
